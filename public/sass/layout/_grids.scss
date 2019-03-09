@@ -1,0 +1,227 @@
+// === === === ===  commertial SECTIONS GRIDS
+.commertial_section {
+    max-width: $max-width;
+    margin: 0 auto;
+
+    &__first {
+        display: grid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 5rem;
+    }
+
+    &__second {
+        display: grid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 5rem;
+    }
+}
+
+
+@media (min-width: 280px) {
+    .commertial_section {
+        max-width: $max-width;
+        margin: 0 auto;
+
+        &__first {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 0;
+        }
+
+        &__second {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 0;
+        }
+    }
+}
+
+
+
+//=== === === === Blogers grid
+
+.blogers_section {
+
+    max-width: $max-width;
+    margin: 0 auto;
+
+    &__grid {
+        display: grid;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+        grid-gap: 30px;
+
+
+    }
+}
+
+
+
+.subcription {
+    max-width: $max-width;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+
+//=== === === === Footer grid
+
+
+.footer {
+    max-width: $max-width-for-footer;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+}
+
+
+/// About
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// About
+
+
+// === === === === === === === === === //
+// === === === OTHER PAGES  === === === //
+// === === === === === === === === === //
+
+// === === REGISTRATION SECTION
+.registration_container {
+    max-width: 60%;
+    margin: 10vh auto;
+    display: grid;
+    align-items: center;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "name surname "
+        "date date"
+        "email button"
+        "password button";
+
+    &__name {
+        grid-area: name;
+    }
+
+    &__surname {
+        grid-area: surname;
+    }
+
+    &__date {
+        grid-area: date;
+    }
+
+    &__email {
+        grid-area: email;
+    }
+
+    &__password {
+        grid-area: password;
+    }
+
+    &__button {
+        grid-area: button;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .registration_container {
+        max-width: 90vw;
+        margin: 10vh auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "name  "
+            "surname"
+            "date"
+            "email"
+            "password"
+            "button";
+
+    }
+}
+
+
+.login_container {
+    max-width: 60%;
+    margin: 10vh auto;
+    display: grid;
+    align-items: center;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "email email"
+        "password password"
+        "button button";
+
+    &__email {
+        grid-area: email;
+    }
+
+    &__password {
+        grid-area: password;
+    }
+
+    &__button {
+        grid-area: button;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .login_container {
+        max-width: 90vw;
+    }
+}
+
+
+/// === === ===   ABOUT SECTION GRID
+.about_section {
+
+    max-width: $max-width;
+    margin: 0 auto;
+
+    &__grid {
+        display: grid;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+        grid-gap: 4rem;
+
+
+    }
+}

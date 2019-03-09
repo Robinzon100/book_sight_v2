@@ -1,0 +1,335 @@
+.loading_screen {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    z-index: 999;
+
+
+    img {
+        @include center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.subcription {
+    max-width: 100%;
+    background-color: $primary-color-second;
+    position: relative;
+    background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(29, 47, 51, 0.4) 100%), url(https://ak1.picdn.net/shutterstock/videos/20376331/thumb/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+
+
+    &__registration-box {
+        font-family: 'Varela Round', sans-serif;
+        display: block;
+        max-width: 100%;
+
+
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: inline-block;
+            position: relative;
+            // height: 100%; es sheidzleba gadaswordes
+            width: 100%;
+
+            li {
+                display: block;
+                // height: 25%;
+                height: calc(100% / 2);
+                min-height: 70px;
+                position: relative;
+                display: inline-block;
+                padding: 1rem 2rem 0rem 2rem;
+
+
+
+                input {
+                    width: 94%;
+                    height: 6.5rem;
+                    padding: 0 3px 0 10px;
+                    font-size: 2rem;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    position: relative;
+                    top: -.7rem;
+
+
+
+
+                    &:focus {
+                        border: 2px solid $color-main;
+                    }
+
+                    &:focus+ ::placeholder {
+                        opacity: 0;
+                    }
+
+                    &:placeholder-shown {
+                        color: rgba(0, 0, 0, 0.5);
+                        font-size: 2rem;
+                    }
+
+
+
+
+
+                }
+
+                input[type=text] {
+                    padding: 1rem;
+                    font-size: 2rem;
+
+                }
+
+
+
+
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:900px) {
+
+    .subcription {
+
+
+        &__registration-box {
+            text-align: center;
+
+
+            ul {
+
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.subcription-textbox {
+    max-width: $max-width;
+    height: 15rem;
+    color: $font-white-color;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+
+
+
+
+    &--main {
+        display: block;
+        position: relative;
+
+        &::first-letter {
+            color: $primary-color-first;
+        }
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.9rem;
+        position: relative;
+        top: .5rem;
+        left: .2rem;
+    }
+
+}
+
+
+
+
+.commertial_section {
+    width: 100%;
+    height: 170vh;
+
+    &__first {
+        width: 100%;
+        height: 90vh;
+
+        &__img {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__text {
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__second {
+        width: 100%;
+        height: 50vh;
+
+        &__text {
+            max-width: 50rem;
+            text-align: right;
+            margin: 0 auto;
+        }
+
+        &__img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+
+
+
+.blogers_section {
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    // position: relative;
+
+
+
+
+    .blogers-textbox {
+        color: $primary-color-second-font;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        margin-top: 4rem;
+
+
+
+
+        &--main {
+            display: block;
+            font-size: 4rem;
+            position: relative;
+            letter-spacing: 10px;
+            font-weight: 400;
+
+
+            &::first-letter {
+                color: $primary-color-first;
+
+            }
+        }
+
+        &--sub {
+            display: block;
+            font-size: 2rem;
+            position: relative;
+            top: .5rem;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    &__grid {
+        max-width: 100%;
+        // height: 70vh;
+        margin-top: 10rem;
+        position: relative;
+
+
+
+
+
+        &__box {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            position: relative;
+
+
+            &__img {
+                max-width: 100%;
+                height: 40rem;
+                object-fit: cover;
+                border-radius: 5px;
+                overflow: hidden;
+                cursor: pointer;
+                position: relative;
+                background-size: cover;
+
+
+            }
+
+            /// ===  ===  === Hover on images
+            &__hover {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3rem;
+                font-family: 'Varela Round', sans-serif;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: $font-white-color;
+                z-index: 20;
+                opacity: 0;
+                transition: bottom .5s, opacity .5s cubic-bezier(.33, .66, .66, 1);
+
+
+
+
+                &:hover {
+                    opacity: 1;
+                    bottom: 50rem;
+                    transition: all .6s;
+                    background: rgba(35, 49, 66, 0.5);
+
+
+                }
+
+            }
+
+            /// ===  ===  === Hover on images
+
+
+            // IMG shadow hover
+            // .card-hover {
+            //     @extend .blogers_section__grid__box__img;
+            //     @include material-shadow(1);
+
+
+
+            //     &:hover {
+            //         @include material-shadow(4);
+            //         transform: scale(1.05);
+
+            //     }
+            // }
+
+
+            /// IMG shadow hover
+
+
+
+        }
+    }
+}

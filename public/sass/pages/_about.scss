@@ -1,0 +1,71 @@
+.about_section {
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    
+
+    .about-textbox{
+        color: $primary-color-second-font;
+        backface-visibility: hidden;
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        margin-top: 4rem;
+
+        &--main {
+            display: block;
+            font-size: 4rem;
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: 10px;
+            font-weight: 400;
+
+            &::first-letter {
+                color: $primary-color-first;
+
+            }
+        }
+
+        &--sub {
+            display: block;
+            font-size: 2rem;
+            color: #505a66;
+            position: relative;
+            top: .5rem;
+            letter-spacing: 1px;
+        }
+    }
+
+
+    &__grid{
+        width: 100%;
+        margin-top: 10rem;
+        position: relative;
+
+        &__box{
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            position: relative;
+
+            &__img {
+                max-width: 100%;
+                height: 40rem;
+                object-fit: cover;
+                border-radius: 5px;
+                overflow: hidden;
+                cursor: pointer;
+                position: relative;
+                background-size: cover;
+            }
+
+            
+            
+        }
+
+
+    }
+    
+
+
+
+}

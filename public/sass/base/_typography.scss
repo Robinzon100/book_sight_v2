@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    // font-weight: 300;
+    /*font-size: 16px;*/
+    // overflow: hidden;
+    line-height: 2;
+
+}
+
+
+/// === === === === MAIN HEADER FONT FONT CALC
+.heading-primary--main {
+    font-weight: bold;
+    font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.heading-primary--sub {
+    font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+
+/// === === === === COMETRIAL SECTION FONT FONT CALC
+.commertial--main {
+    font-weight: bold;
+    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
+}
+
+.commertial--sub {
+    color: rgb(61, 68, 77);
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
+}
+
+
+
+
+
+/// === === === === All HEADER FONT FONT CALC 
+.primary-text--main {
+    font-weight: bold;
+    font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+.primary-text--sub {
+    font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+
+
+/// === === === === All FOOTER FONT SIZE CALC
+.footer-primary--main {
+    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+
+/// === === === === MAIN NAVIGATION FONT CALC
+.overlay-menu {
+    font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+
+/// === === === === BOOK GENRE NAVIGATION FONT CALC
+.search-box__list__item__link {
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+/// === === === === SUBSCRIPTIOM FONT CALC
+.subcription-textbox--main {
+    font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+.registration_container {
+
+    &__title {
+        font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
+    }
+}
+/// === === === === SUBSCRIPTIOM FONT CALC
+
+.blogers_section__grid__box__hover{
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+
+}
+
+/// === === === === ABOUT FONT CALC
+.about-textbox--sub {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
+}

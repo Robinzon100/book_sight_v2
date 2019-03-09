@@ -1,0 +1,74 @@
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/// NAV Animation
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+
+
+// === === === === SCROLL ANIMATIONS
+@keyframes scroll_anim {
+    0% {opacity: 1;}
+
+    100% {opacity: 0;transform: translateY(46px);}
+}
+ 
+  
+@keyframes wheel_anim {
+    0% {transform: translate(-50%, -50%);}
+
+    50% {transform: translate(-50%, -20%);}
+
+    100% {transform: translate(-50%, -50%);}
+}
+
+@keyframes scroll_icon_fade{
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -25%) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.75);
+    }
+}
+
+
+
+// === === === === SCROLL OUT PROPERTIES
+[data-scroll] {
+
+    transition: all 1s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(-200px);
+}

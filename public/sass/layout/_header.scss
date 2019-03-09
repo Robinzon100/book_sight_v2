@@ -1,0 +1,209 @@
+/// ======== Main page Header
+.header {
+    height: 100vh;
+    position: relative;
+
+
+
+
+    &__video-box {
+        height: 100vh;
+        overflow: hidden;
+
+
+        /// ES KIDE QMNIS ELEMNTIS WEMODAN :afters ROMELITAC PATARAZE OVERLAY UKETEBS FERIS
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba($primary-color-second, .75);
+        }
+    }
+
+
+
+
+    &__video {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+
+    }
+
+    // aq SHEVCVALE
+    // MOBILE SURATI IQNEBA ==================================
+
+
+
+    &__logo-box {
+        position: absolute;
+        left: 4rem;
+        top: 2rem;
+        z-index: 50;
+
+    }
+
+    &__logo {
+        width: 5rem;
+
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include center;
+        text-align: center;
+        z-index: 50;
+        backface-visibility: hidden;
+
+    }
+}
+
+
+.heading-primary {
+    color: $font-white-color;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+    font-family: 'Varela Round', sans-serif;
+
+
+    &--main {
+        display: block;
+        // font-size: 9rem;
+        letter-spacing: 15px;
+        text-shadow: 2px 1px 3px #071D2B;
+        position: relative;
+        // font-weight: bold;
+        text-transform: uppercase;
+
+        &::first-letter {
+            color: $primary-color-first;
+        }
+    }
+
+    &--sub {
+        display: block;
+        // font-size: 3rem;
+        color: $font-white-color;
+        text-shadow: 2px 1px 3px #071D2B;
+        position: relative;
+        letter-spacing: 8px;
+
+
+    }
+
+
+}
+
+/// ======== Main page Header
+
+
+
+///  === === === === ALL OHER HEADERS
+.header_secondary {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(48, 78, 84, .4) 100%), url(/img/Registration.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+    &__logo-box {
+        position: absolute;
+        left: 4rem;
+        top: 2rem;
+        z-index: 50;
+    }
+
+    &__logo {
+        width: 5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        &__list {
+            list-style-type: none;
+            position: relative;
+
+            &__item {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 5rem;
+                }
+            }
+
+            &__link {
+
+                &:link,
+                &:visited {
+                    text-decoration: none;
+                    display: inline-block;
+
+
+                }
+            }
+        }
+    }
+
+
+
+    .primary-text {
+        color: $font-white-color;
+        // text-transform: uppercase;
+        backface-visibility: hidden;
+        margin-bottom: 4rem;
+        font-family: 'Varela Round', sans-serif;
+
+
+        &--main {
+            display: block;
+            letter-spacing: 8px;
+            text-shadow: 2px 1px 3px #071D2B;
+            position: relative;
+            text-transform: uppercase;
+
+
+
+
+            &::first-letter {
+                color: $primary-color-first;
+            }
+        }
+
+        &--sub {
+            display: block;
+            // font-size: 2.5rem;
+            letter-spacing: 5px;
+            color: rgb(223, 223, 223);
+            text-shadow: 2px 1px 3px #071D2B;
+            position: relative;
+            margin-top: 1.5rem;
+
+
+
+        }
+
+
+
+
+    }
+
+}

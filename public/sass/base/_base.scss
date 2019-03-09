@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+ 
+html {  
+    font-size: 62.5%;
+     
+}
+
+body {
+    box-sizing: border-box;  
+    // background-color: rgb(66, 16, 116);
+    // scroll-snap-type: mandatory;
+    // scroll-snap-points-y: repeat(100vh);
+    // scroll-snap-type: y mandatory;
+}
+
+.first_red{
+
+    &::first-letter{
+        color: $primary-color-first;
+    }
+}
+
+// section {
+//     scroll-snap-align: start;
+
+// }
