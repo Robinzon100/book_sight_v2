@@ -17,8 +17,7 @@ function style() {
     .src("./public/sass/*.scss")
     .pipe(sass())
     .pipe(minCss())
-    .pipe(gulp.dest("./public/css"))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest("./public/css"));
 }
 
 //

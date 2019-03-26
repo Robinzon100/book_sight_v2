@@ -7,6 +7,10 @@ const app = express();
 const errorController = require('./controllers/error');
  
 
+// ─── ROUTES IMPORTS ─────────────────────────────────────────────────────────────
+const booksRoutes = require('./routes/books');
+
+    
 
 // ─── VIEW ENGINE ────────────────────────────────────────────────────────────────    
 app.set('view engine', 'ejs');
@@ -19,5 +23,9 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static(path.join(__dirname, 'public')));
 // ─── USING THE ROUTES ───────────────────────────────────────────────────────────
+app.use(booksRoutes);
+
+
+
 app.use(errorController.get404);
 app.listen(3000);
