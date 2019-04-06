@@ -40,7 +40,7 @@ body {
 /// === === === === All HEADER FONT FONT CALC 
 .primary-text--main {
     font-weight: bold;
-    font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(10px + (90 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 
@@ -70,7 +70,7 @@ body {
 
 /// === === === === BOOK GENRE NAVIGATION FONT CALC
 .search-box__list__item__link {
-    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(15px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 

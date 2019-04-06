@@ -4,10 +4,10 @@
 
  
 //=== === === HEADER ANIMATION
-$('#toggleMenuBtn').click(function () {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-});
+// $('#toggleMenuBtn').click(function () {
+//     $(this).toggleClass('active');
+//     $('#overlay').toggleClass('open');
+// });
 
 
 // Toggle animation
