@@ -46,7 +46,18 @@ xmlhttp.open("GET", "../data/language/translate.txt", true);
 xmlhttp.send();
 
 
+/// Glider
 
+new Glider(document.querySelector('.glider'), {
+  slidesToScroll: 1,
+  slidesToShow: 2.5,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
 
 
 

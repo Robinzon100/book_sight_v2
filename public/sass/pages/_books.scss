@@ -1,0 +1,49 @@
+// .container {
+// 	width: 100%;
+// 	max-width: 100%;
+// 	display: flex: 
+// 	flex-direction: row;
+// 	justify-content: space-evenly;
+// 	align-items: center;
+
+// 	.container-glider{
+// 		width: 25%;
+
+
+// 	}
+
+// }
+
+
+// .glider-contain{
+// 	max-width: 100%;
+// 	width: 100%;
+// }
+.glider-track{
+	width: 100% !important;
+	max-width: 100%;
+	height: auto;
+}
+
+.glider-prev{
+
+}
+
+.main-container{
+	width: 100% !important;
+	height: 200px !important;
+	text-align: center;
+	display:flex;
+	flex-direction:row;
+	// align-items: center;
+	justify-content:space-evenly;
+
+	&--one{
+		width: 25%;
+		height: 100%;
+		background-color:grey;
+		border:1px solid red;
+
+		
+	}
+}
