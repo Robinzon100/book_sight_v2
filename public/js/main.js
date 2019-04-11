@@ -49,8 +49,8 @@ xmlhttp.send();
 /// Glider
 
 new Glider(document.querySelector('.glider'), {
-  slidesToScroll: 1,
-  slidesToShow: 2.5,
+  slidesToShow: 3,
+  slidesToScroll: 3,
   draggable: true,
   dots: '.dots',
   arrows: {
@@ -58,7 +58,6 @@ new Glider(document.querySelector('.glider'), {
     next: '.glider-next'
   }
 });
-
 
 
 
