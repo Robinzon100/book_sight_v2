@@ -87,6 +87,9 @@ new Glider(document.querySelector('.glider'), {
 
 
 
+
+
+
 //imports
 // import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from ".././node_modules/gsap/all";
 
